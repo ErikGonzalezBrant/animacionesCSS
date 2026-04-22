@@ -1,0 +1,129 @@
+<html>
+<head>
+    <title>Manuel Seoane Corrales</title>
+    <style>
+        h1{
+            font-family: "century gothic";
+            color: rgba(255, 251, 0, 0);
+            text-align: center;
+
+            animation-name: titulo;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards; 
+        }
+
+        @keyframes titulo{
+            from{                              
+                color: rgba(165, 42, 42, 0);
+            }
+            to{                                 
+                color: rgb(255, 238, 0);
+            }
+        }
+
+        .img1{
+            height: 300px;
+            width: 300px;
+            display: block; 
+            margin: auto;   
+            animation: imagen1 2s 1 forwards; 
+            opacity: 0;
+        }
+
+        @keyframes imagen1{
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+
+        p{
+            text-align: center;
+            font-family: "century gothic";
+            font-weight: bold;
+            color: rgb(255, 230, 0);
+
+            animation-name: texto;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: backwards;
+            animation-delay: 3s;
+        }
+
+        @keyframes texto{
+            from{
+                color: rgba(255, 230, 0, 0);
+            }
+            to{
+                color: rgb(255, 230, 0);
+            }
+        }
+
+        ul{
+            margin-left: 700;
+            font-family: "century gothic";
+            font-weight: bold;
+            color: rgb(255, 230, 0);
+            
+            animation-name: lista;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: backwards;
+            animation-delay: 3s;
+        }
+
+        @keyframes lista{
+            from{
+                color: rgba(255, 230, 0, 0);
+            }
+            to{
+                color: rgb(255, 230, 0);
+            }
+        }
+
+        .img2{
+            height: 600px;
+            width: 900px;
+            display: block;
+            margin: auto;
+
+            animation-name: imagen2;
+            animation-duration: 2s;
+            animation-delay: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+
+           @keyframes imagen2{
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+
+
+        body{background-color: rgb(10, 10, 114);}
+
+    </style>
+</head>
+
+<body>
+<img src="img/seoane.png" class="img1">
+
+<a href="../index.html">Volver</a>
+
+<h1>IESTP MANUEL SEOANE CORRALES</h1>
+    <p>Instituto público con 7 carreras técnicas profesionales las cuales son:</p>
+    <ul>
+        <li>Desarrollo de Sistemas de la Información</li>
+        <li>Contabilidad</li>
+        <li>Electricidad Industrial</li>
+        <li>Enfermería Técnica</li>
+        <li>Mecánica Automotriz</li>
+        <li>Mecánica de Producción</li>
+        <li>Química Industrial</li>
+    </ul>
+
+<img src = "./img/instituto.jpg" class="img2">
+
+</body>
+
+</html>
