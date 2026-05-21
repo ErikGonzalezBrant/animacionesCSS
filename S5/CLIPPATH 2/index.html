@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto Parallax</title>
+
+    <style>
+        *{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body{background-color: black;}
+
+    a{color: red;
+    font-size: 30px;}
+
+    .contenedor{
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        border: 2px black solid;
+        width: 800px;
+        height: 400px;
+    }
+
+    .arbolc{
+        position: absolute;
+        top: 0px;
+        left: -50px;
+        transform: scale(1);
+
+        animation-name: arbol;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        animation-duration: 6s;
+        z-index: 8;
+    }
+
+        .arbol{
+        width: 600px;
+        height: 600px;
+    }
+
+    @keyframes arbol {
+        0%{
+            top: 0px;
+            left: -50px;
+            transform: scale(1);
+        }
+        100%{
+            top:-200px;
+            left: -1100px;
+            transform: scale(3);
+        }
+    }
+
+
+    .arbolc2{
+        position: absolute;
+        top: 10px;
+        left: 350px;
+
+        animation-name: arbol2;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        animation-duration: 6s;
+        z-index: 8;
+
+    }
+
+    .arbol2{
+        width: 600px;
+        height: 600px;
+    }
+
+    @keyframes arbol2 {
+        0%{
+            top: 10px;
+            left: 350px;
+            transform: scale(1);
+        }
+        100%{
+            top:-200px;
+            left: 1200px;
+            transform: scale(3);
+        }
+    }
+
+    .fondo{
+        position: absolute;
+        z-index: 0;
+
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+
+        background-image: url(./img/fondo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        animation-name: fondo;
+        animation-duration: 10s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.5s;
+    }
+
+    @keyframes fondo {
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1.2)
+        }
+        
+    }
+
+    .esqueletoc{
+        position: absolute;
+        top: 250px;
+        left: 350px;
+
+        animation-name: esqueleto;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        animation-duration: 6s;
+        z-index: 7;
+
+    }
+
+    .esqueleto{
+        width: 100px;
+        height: 100px;
+    }
+
+    @keyframes esqueleto {
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1.5);
+        }
+        
+    }
+
+    .luzc{
+        position: absolute;
+        top: 10px;
+        left: 300px;
+
+        animation-name: luz;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        animation-duration: 6s;
+        z-index: 7;
+    }
+
+    .luz{
+        width: 100px;
+        height: 100px;
+    }
+
+    @keyframes luz {
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(7);
+        }
+    }
+
+    .vidac{
+        position: absolute;
+        top: 380px;
+        left: 250px;
+        transform: scale(1);
+
+        animation-name: vida;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+        z-index: 7;
+    }
+
+    .vida{
+        width: 300px;
+        height: 300px;
+    }
+
+    @keyframes vida {
+        0%{
+            top: 380px;
+            transform: scale(0.1);
+        }
+        100%{
+            top: 50px;
+            transform: scale(1);
+        }
+    }
+
+    .hudc{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: scale(1);
+
+        animation-name: hud;
+        animation-delay: 0.5s;
+        animation-iteration-count: infinite;
+        animation-duration: 0.9s;
+        z-index: 9;
+    }
+
+    .hud{
+        width: 150px;
+        height: 100px;
+    }
+
+    @keyframes hud {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <a href="../index.html">Volver</a> <br>
+    <a href="./index.html">Repetir animacion</a>
+
+    <div class="contenedor">
+
+        <div class="arbolc">
+            <img src="./img/arbol.png" class="arbol">
+        </div>
+
+        <div class="arbolc2">
+            <img src="./img/arbol.png" class="arbol2">
+        </div>
+
+        <div class="fondo"></div>
+
+        <div class="esqueletoc">
+            <img src="./img/esqueleto.png" class="esqueleto">
+        </div>
+
+        <div class="luzc">
+            <img src="./img/luz.png" class="luz">
+        </div>
+
+        <div class="vidac">
+            <img src="./img/vida.png" class="vida">
+        </div>
+
+        <div class="hudc">
+            <img src="./img/hud.png" class="hud">
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
