@@ -1,0 +1,260 @@
+<html>
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+
+            body{
+                background-color: black;
+            }
+
+            a{color: white;}
+
+            .contenedor{
+                width: 1000px;
+                height: 300px;
+                position: relative;
+                margin: 0 auto;
+                border: 1px solid;
+                overflow: hidden;
+
+                animation-name: contenedor;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+            }
+
+            .marco1{
+                width: 200px;
+                height: 300px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-image: url(./img/CSS.jpg);
+                background-size: cover;
+
+                animation-name: marco1;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+
+            .marco2{
+                width: 200px;
+                height: 300px;
+                background-color: rgb(0, 255, 0);
+                position: absolute;
+                top: 0px;
+                left: -200px;
+                background-image: url(./img/HTML.jpg);
+                background-size: cover;
+
+                animation-name: marco2;
+                animation-duration: 2s;
+                animation-delay: 2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+
+            .marco3{
+                width: 200px;
+                height: 300px;
+                background-color: yellow;
+                position: absolute;
+                top: -300px;
+                left: 400px;
+                background-image: url(./img/JS.png);
+                background-size: cover;
+
+                animation-name: marco3;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                animation-delay: 4s;
+            }
+
+            .marco4{
+                width: 200px;
+                height: 300px;
+                background-color: blue;
+                position: absolute;
+                top: -300px;
+                left: 400px;
+                background-image: url(./img/PHP.jpg);
+                background-size: cover;
+
+                animation: marco4 2s 1 forwards 6s;
+            }
+
+            .marco5{
+                width: 200px;
+                height: 300px;
+                background-color: rgb(0, 255, 213);
+                position: absolute;
+                top: 300px;
+                left: 400px;
+                background-image: url(./img/BS.png);
+                background-size: cover;
+
+                animation: marco5 2s 1 forwards 8s;
+            }
+            .texto{
+                background-color: rgba(0, 0, 0, 0.658);
+                position: absolute;
+                width: 1000px;
+                top: 300px;
+                
+                animation-name: texto;
+                animation-duration: 2s;
+                animation-delay: 10s;
+                animation-fill-mode: forwards;
+            }
+
+            .texto2{
+                text-align: center;
+                
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+
+                text-shadow: 
+                -1px -1px 0 black,
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+
+                animation-name: textocolor;
+                animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes texto{
+                0%{
+                    top: 300px
+                }
+                100%{
+                    top: 20;
+                }
+            }
+
+            @keyframes textocolor {
+                0%{color: aqua;}
+                10%{color: blue;}
+                20%{color: yellow}
+                30%{color: orange;}
+                40%{color: orangered;}
+                50%{color: red;}
+                60%{color: brown;}
+                70%{color: purple;}
+                80%{color: blueviolet;}
+                90%{color: cyan;}
+                100%{color: aqua;}
+            }
+
+            @keyframes contenedor {
+                0%{color: aqua;}
+                10%{color: blue;}
+                20%{color: yellow}
+                30%{color: orange;}
+                40%{color: orangered;}
+                50%{color: red;}
+                60%{color: brown;}
+                70%{color: purple;}
+                80%{color: blueviolet;}
+                90%{color: cyan;}
+                100%{color: aqua;}
+            }
+
+
+            @keyframes marco1 {
+                0%{
+                    left: 1000px;
+                }
+                50%{
+                    left: -200px;
+                }
+                100%{
+                    left: 0px;
+                }
+            }
+
+            @keyframes marco2 {
+                0%{
+                    left: -200px;
+                }
+                50%{
+                    left: 1000px;
+                }
+                100%{
+                    left: 800px;
+                }
+            }
+
+            @keyframes marco3 {
+                0%{
+                    top: -300px;
+                    left: 400px;
+                }
+                50%{
+                    top: 0px;
+                    left: 400px;
+                }
+                100%{
+                    top: 0px;
+                    left: 200px;
+                }
+            }
+
+            @keyframes marco4 {
+                0%{
+                    top: -300px;
+                    left: 400px;
+                }
+                50%{
+                    top: 0px;
+                    left: 400px;
+                }
+                100%{
+                    top: 0px;
+                    left: 600px;
+                }
+            }
+
+            @keyframes marco5 {
+                0%{
+                    top: 300px;
+                    transform: rotateY(180deg);
+                }
+                50%{
+                    top: -300px;
+                }
+                100%{
+                    top: 0px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="contenedor">
+            <div class="marco1"></div>
+            <div class="marco2"></div>
+            <div class="marco3"></div>
+            <div class="marco4"></div>
+            <div class="marco5"></div>
+            <div class="texto">
+                <h1 class="texto2">Tecnologías de Desarrollo Web</h1>
+            </div>
+        </div>
+
+        <h2><a href="../index.html">Volver</a></h2>
+
+    </body>
+</html>
