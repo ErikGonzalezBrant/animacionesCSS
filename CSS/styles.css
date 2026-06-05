@@ -1,0 +1,17 @@
+ body{
+            background-image: url(../img/fondo2.jpg);
+            margin: 0;
+        }
+
+        .titulo{
+            display: block;
+            margin: auto;
+        }
+
+        .sub{
+            background-color: rgb(255, 255, 255);
+        }
+
+        h1{
+            color: rgb(255, 0, 0);
+        }
