@@ -1,0 +1,47 @@
+#cuadrito1{
+    background-color: rgb(255, 255, 255);
+}
+#cuadrito2{
+    background-color: rgb(0, 0, 0);
+}
+
+#cuadrito1, #cuadrito2{ 
+    height: 100px;
+    width: 100px;
+}
+#contenedor1{ 
+    float: left
+}
+#contenedor2{
+    float:left
+}
+
+#cuadrito3{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    margin-left: 1000px;
+}
+
+#cuadrito4{
+    height: 20px;
+    width: 140px;
+    background-color: black;
+    margin-left: 980px;
+}
+
+#cuadrito5{
+    height: 150px;
+    width: 50px;
+    background-color: black;
+    margin-left: 1025px;
+}
+
+h1{
+    margin-left: 1015px;
+}
+
+
+body{background-color:rgb(151, 151, 151)}
+
+.volver{background-color: white;}
