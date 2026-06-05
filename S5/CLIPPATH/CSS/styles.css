@@ -1,0 +1,382 @@
+*{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body{background-color: rgb(0, 119, 255);}
+
+    a{
+        color: white;
+        font-size: 30px;
+    }
+
+    .contenedor{
+        overflow: hidden;
+        position: relative;
+        border: 2px black solid;
+        width: 500px;
+        height: 350px;
+    }
+
+    .colina{
+        position: absolute;
+        z-index: 2;
+
+        width: 500px;
+        height: 350px;
+
+        animation-name: colina;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+
+    .colinaimg{
+        margin-top: 100px;
+    }
+
+    @keyframes colina {
+    0% {
+        transform: scale(1);
+        margin-top: 0px;
+        }
+
+    100% {
+        transform: scale(1.1);
+        margin-top: -50px
+        }
+    }
+
+    .cielo{
+        position: absolute;
+        background-image: url(../img/cielo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+
+        width: 500px;
+        height: 350px;
+
+        animation-name: cielo;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes cielo {
+    0% {
+        transform: scale(1);
+        margin-top: 0px;
+        }
+
+    100% {
+        transform: scale(1.2);
+        margin-top: -130px
+        }
+    }
+
+    .tri1{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url(../img/gorro.jpg);
+        background-size: cover;
+        margin-left: 200px;
+        z-index: 7;
+
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    .cara1{
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        background-image: url(../img/cara.gif);
+        background-size: cover;
+        margin-left: 195px;
+        margin-top: 75px;
+        z-index: 5;
+
+        clip-path: circle(50% at 50% 50%);
+    }
+
+    .cara2{
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        background-image: url(../img/caratriste.gif);
+        background-size: cover;
+        margin-left: 189px;
+        margin-top: 75px;
+        z-index: 6;
+        transform: scale(0);
+
+        clip-path: circle(50% at 50% 50%);
+
+        animation-name: cara;
+        animation-duration: 0.01s;
+        animation-delay: 1.4s;
+        animation-fill-mode: forwards;
+
+    }
+
+    @keyframes cara {
+        0%{
+            transform: scale(0);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+    .trap{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url(../img/jean.jpg);
+        background-size: cover;
+        margin-left: 200px;
+        margin-top: 170px;
+        z-index: 4;
+
+        clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%);
+    }
+
+    .hexa{
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-color: rgb(251, 255, 0);
+        background-size: cover;
+        margin-left: 150px;
+        margin-top: 140px;
+        z-index: 3;
+
+        clip-path: polygon(14% 42%, 87% 42%, 100% 50%, 87% 59%, 14% 59%, 0% 50%);
+
+        animation-name: brazos;
+        animation-delay: 1.2s;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes brazos {
+        0%{
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(10deg);
+        }
+        50%{
+            transform: rotate(0deg);
+        }
+        75%{
+            transform: rotate(-10deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+    .tri2{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/cono.jpg);
+        background-size: cover;
+        margin-left: 330px;
+        margin-top: 170px;
+        z-index: 3;
+
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+        
+        animation-name: cono;
+        animation-delay: 0.8s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes cono {
+        0%{
+            margin-top: 170px;
+            margin-left: 330px;
+        }
+        100%{
+            margin-top: 280px;
+            margin-left: 380px;
+            transform: rotate(90deg);
+        }
+        
+    }
+
+    .circ2{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/fresa.jpg);
+        background-size: cover;
+        margin-left: 315px;
+        margin-top: 130px;
+        z-index: 5;
+
+        clip-path: circle(50% at 50% 50%);
+
+        animation-name: bola1;
+        animation-delay: 0.8s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes bola1 {
+        0%{
+            margin-top: 130px;
+            margin-left: 315px;
+        }
+        100%{
+            margin-top: 240px;
+            margin-left: 335px;
+        }
+        
+    }
+
+    .circ3{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/vainilla.jpg);
+        background-size: cover;
+        margin-left: 345px;
+        margin-top: 130px;
+        z-index: 5;
+
+        clip-path: circle(50% at 50% 50%);
+
+        animation-name: bola2;
+        animation-delay: 0.8s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes bola2 {
+        0%{
+            margin-top: 130px;
+            margin-left: 345px;
+        }
+        100%{
+            margin-top: 240px;
+            margin-left: 395px;
+        }
+        
+    }
+
+    .circ4{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/chocolate.jpg);
+        background-size: cover;
+        margin-left: 330px;
+        margin-top: 100px;
+        z-index: 5;
+
+        clip-path: circle(50% at 50% 50%);
+
+        animation-name: bola3;
+        animation-delay: 0.8s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes bola3 {
+        0%{
+            margin-top: 100px;
+            margin-left: 330px;
+        }
+        100%{
+            margin-top: 240px;
+            margin-left: 450px;
+        }
+        
+    }
+
+    .elip1{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background-image: url(../img/zapato.jpg);
+        background-size: cover;
+        margin-left: 170px;
+        margin-top: 250px;
+        z-index: 6;
+
+        clip-path: ellipse(50% 25% at 50% 50%);
+
+        animation-name: pieizq;
+        animation-delay: 1.2s;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes pieizq {
+        0%{
+            transform: rotate(0deg);
+            margin-top: 250px;
+        }
+        25%{
+            transform: rotate(-10deg);
+            margin-top: 240px;
+        }
+        50%{
+            transform: rotate(0deg);
+            margin-top: 250px;
+        }
+        75%{
+            transform: rotate(10deg);
+            margin-top: 260px;
+        }
+        100%{
+            transform: rotate(0deg);
+            margin-top: 250px;
+        }
+    }
+
+    .elip2{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background-image: url(../img/zapato.jpg);
+        background-size: cover;
+        margin-left: 260px;
+        margin-top: 250px;
+        z-index: 6;
+
+        clip-path: ellipse(50% 25% at 50% 50%);
+
+        animation-name: pieder;
+        animation-delay: 1.2s;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes pieder {
+        0%{
+            transform: rotate(0deg);
+            margin-top: 250px;
+        }
+        25%{
+            transform: rotate(-10deg);
+            margin-top: 260px;
+        }
+        50%{
+            transform: rotate(0deg);
+            margin-top: 250px;
+        }
+        75%{
+            transform: rotate(10deg);
+            margin-top: 240px;
+        }
+        100%{
+            transform: rotate(0deg);
+            margin-top: 250px;
+        }
+    }
